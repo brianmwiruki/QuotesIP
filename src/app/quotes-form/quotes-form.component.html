@@ -1,0 +1,35 @@
+<div>
+    <h2 class="text-center">Write down your quote</h2>
+    <form (ngSubmit)='submitQuote()' #quotesForm = 'ngForm'>
+        <div class="form-group">
+            <label for="quote">Quote</label>
+            <textarea id="quote" name="quote" class="form-control" rows="5" [(ngModel)] = 'newQuote.quote' #quote='ngModel' required></textarea>
+            <div class="form-control-feedback" class="alert alert-warning" [hidden]="quote.valid || quote.pristine">
+                <p>Input is required</p>
+            </div>
+        </div>
+        <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" [(ngModel)] = 'newQuote.author' #author='ngModel' class="form-control" required>
+                <div [hidden]="author.valid || author.pristine" class="alert alert-warning">
+                    <p>Input is required</p>
+            </div>
+        </div>
+        <div class="form-group">
+                <label for="submitted-by">Submitted By</label>
+                <input type="text" id="submittedby" name="submittedby" [(ngModel)] = 'newQuote.submittedBy' #submittedby='ngModel' class="form-control" required>
+                <div [hidden]="submittedby.valid || submittedby.pristine" class="alert alert-warning">
+                    <p>Input is required</p>
+            </div>
+        </div>
+            <div class="form-group">
+                    <label for="date">Date Quoted</label>
+                    <input type="date" id="date" name="date" class="form-control" [(ngModel)] = 'newQuote.dateSaid' #date='ngModel' required>
+                    <div [hidden]="date.valid || date.pristine" class="alert alert-warning">
+                        <p>Input is required</p>
+                </div><br>
+            </div>
+                <button type="submit" class="btn btn-info">Submit</button>
+    </form><br>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="main-display">
+    <div class="jumbotron text-center">
+        <h1>Quotes</h1>
+        <p class="text-center"> "Shoot for the moon. Even if you miss, you'll land among the stars." ~ L. Brown</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <app-quotes-form (addQuote)='addAquote($event)'></app-quotes-form>
+            </div>
+            <div *ngFor='let quote of quotes; let i=index; let likeDislike of likeDislikes'
+                class="col-md-6 float-right">
+                <h3><strong> "{{ quote.quote }}"</strong></h3>
+                <h5> ~ {{ quote.author }}</h5>
+                <h6>Quoted: {{ quote.dateSaid | timeCount }}</h6>
+                <p>Submitted By: {{ quote.submittedBy }}</p>
+                <app-likes (deletingQuotes)='quotusDeletus($event,i)'></app-likes>
+            </div>
+        </div>
+    </div>
+</div>
