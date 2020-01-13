@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.jumbotron {
+  background-color: transparent;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: wheat;
+}
+
+.btn-space {
+  margin-right: 15px;
+}
+
+.main-display {
+  margin-bottom: 80px;
+}
