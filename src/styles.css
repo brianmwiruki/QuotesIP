@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.css";
 .jumbotron {
   background-color: transparent;
 }
@@ -13,5 +14,12 @@ body {
 }
 
 .main-display {
+
   margin-bottom: 80px;
+}
+form{
+  background: black;
+}
+input{
+  border-radius: 10px;
 }

@@ -7,7 +7,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  quotes: Quotes[] = [new Quotes('Go out there and have a life', 'Sam Tomashi', 'Shadrack Adwera', new Date(2019, 8, 14))];
+  quotes: Quotes[] = [new Quotes('The ability to move on is directly proportional to our measure of optimism', 'Bryan Mwiruki', 'Bryan M', new Date(2019, 8, 14))];
   addAquote(quote) {
     const quotesInfo = this.quotes.length;
     quote.id = quotesInfo + 1;
