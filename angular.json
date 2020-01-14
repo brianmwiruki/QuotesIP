@@ -118,8 +118,17 @@
               "devServerTarget": "QuotesIP:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/QuotesIP",
+            "netlifyToken": "7d839cb7476ec7f0dc181b4890571b76099679c60c37180238b9f9f950675ccb",
+            "siteId": "68e31986-b4a1-4bc6-a4aa-f79b3840af90"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "QuotesIP"
 }
