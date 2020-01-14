@@ -1,27 +1,17 @@
 # QuotesIP
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This is a simple application that allows you to create a quote and save it, you can also opt to delete a quote you enter and apart from that, the user is able to view already entered quotes and leave a reaction of either upvoting or downvoting.
 
 ## Development server
 
+The application employs the use of the node package manager to create an environment required to run it on a local server.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Installation 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+After cloning the repository from github. You navigate to the cloned folder through your terminal and install the application using the command `npm i` or (same as) `npm install`
+afterwards you have to start the server using the command `ng s` or `ng serve` in order to run it on your browser locally.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

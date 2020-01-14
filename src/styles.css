@@ -1,24 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "bootstrap/dist/css/bootstrap.css";
 .jumbotron {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  background-color: #393987;
-  color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(28, 21, 154);
+    background: linear-gradient(85deg, rgba(28, 21, 154, 1) 0%, rgba(108, 108, 199, 0.9668242296918768) 21%, rgba(24, 183, 236, 1) 47%, rgba(0, 193, 249, 1) 71%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
 }
 
 .btn-space {
-  margin-right: 15px;
+    margin-right: 15px;
 }
 
 .main-display {
-
-  margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
-input{
-  border-radius: 10px;
+input {
+    border-radius: 10px;
 }
